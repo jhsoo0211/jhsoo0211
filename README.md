@@ -21,7 +21,7 @@
 |---|---|---|---|
 | **1** | **IfSave** 🔒 | 25개 자산의 시점별 기회비용 계산, 소비 입력 3경로, 안전 경계를 둔 AI 해석, 캐시·DB 마이그레이션 | 2인 팀에서 Backend·Data·AI·Infra·기획 담당 · AI 페르소나 6종 · 고정 데모 거래 127건 · Java 21 / Spring Boot 3 / PostgreSQL 16 |
 | **2** | **Distributed Shared Editor** 🔒 | Spring Boot 노드 간 Ricart–Agrawala 상호배제, Lamport clock, REQUEST/REPLY/HELD/RELEASE, late-comer SYNC | 2인 팀 · Java 17 / Spring Boot / JPA / H2 / STOMP / SockJS · [Demo](https://www.youtube.com/watch?v=CVRLt1_CdIM) · 운영 환경·최신 테스트 정합성은 미재검증 |
-| **3** | **[ReGrip](https://github.com/jhsoo0211/ReGrip)** | 서버 권위 세션·XP 원장, JWT/회전 refresh token, localStorage↔REST 전환, 멱등 아웃박스 | Canvas 게임 4종 · FastAPI API · 백엔드 테스트 97/97 · ESP32는 연동 트랙이며 실기기·임상 성능은 미검증 |
+| **3** | **[ReGrip](https://github.com/jhsoo0211/ReGrip)** | 서버 권위 세션·XP 원장, JWT/회전 refresh token, localStorage↔REST 전환, 멱등 아웃박스 | Canvas 게임 4종 · FastAPI API · pytest/httpx 기반 API 테스트 · ESP32는 연동 트랙이며 실기기·임상 성능은 미검증 |
 | **4** | **[MarkLens](https://github.com/davinida/marklens)** | KIPRIS 수집·정제, PDF 이미지 추출, OpenCLIP 임베딩, FAISS Top-K, FastAPI 검색 API | 연구 샘플 1,000건 · 512D 임베딩 · Python 337 passed/5 skipped · Vitest 34/34 · E2E 9/9 · 법률 판단 서비스가 아님 |
 | **5** | **DearBloom** 🔒 | 독성·예산·제외 조건 hard filter → 가중치 → 다양성 선택 → LLM fallback의 결정적 추천 파이프라인 | 꽃 59종 · 이야기 438편 · 탄생화 366일 · 테스트 761개 · 편지는 localStorage, Supabase·실 LLM·공개 배포는 미검증 |
 
