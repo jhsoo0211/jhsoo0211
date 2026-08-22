@@ -3,7 +3,9 @@
 금융 데이터의 **정확성**, 외부 연동의 **실패 경계**, 다시 확인할 수 있는 **검증 근거**를 중요하게 생각하는 백엔드 개발자입니다.
 
 `Financial Backend` · `Java / Spring` · `Data-intensive Systems`  
-건국대학교 컴퓨터공학부 4학년 · Seoul
+건국대학교 컴퓨터공학부 재학 · Seoul
+
+![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 [Portfolio](https://app.notion.com/p/3c38a4915b1681819072c9ac96dbc358) · [Email](mailto:jhsoo0211@naver.com)
 
