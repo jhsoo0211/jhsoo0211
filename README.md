@@ -1,64 +1,59 @@
-## 👋 안녕하세요, 정현수입니다
+**한국어** · [English](./README.en.md)
 
-금융 데이터를 안정적으로 처리하고,
-AI와 데이터를 신뢰할 수 있는 서비스로 연결하는 백엔드 개발자를 지향합니다.
+# 👋 정현수 | Backend & Data Engineer
 
-`Financial Backend` · `Java / Spring` · `Data-intensive Systems`  
-건국대학교 컴퓨터공학부 재학 · Seoul
+건국대학교 컴퓨터공학부 · Seoul
+
+저는 **계산 결과, 외부 데이터, AI가 만든 설명 사이의 경계를 코드로 분리하는 백엔드**를 만들고 있습니다.
+
+최근에는 다음과 같은 문제를 직접 구현했습니다.
+- **IfSave**에서 소비 시점의 가상 매수 수량을 먼저 확정하고, 이후 시세로 기회비용을 계산하는 금융 백엔드
+- **MarkLens**에서 KIPRIS 데이터를 수집·정제한 뒤 OpenCLIP 임베딩과 FAISS 검색 API로 연결하는 데이터 파이프라인
+- **분산 공유 편집기**에서 Ricart–Agrawala 상호배제와 Lamport clock으로 동시 편집 순서를 맞추는 분산 로직
+
+`Java / Spring Boot` · `PostgreSQL` · `Python / FastAPI` · `Data-intensive Systems`
 
 ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
 [Portfolio](https://app.notion.com/p/3c38a4915b1681819072c9ac96dbc358) · [Email](mailto:jhsoo0211@naver.com)
 
-### 🔎 Backend Focus
+## Selected Projects
 
-- **Correctness first** — 금액·시세·추천 계산과 AI 생성 문장을 분리하고, 검증 가능한 값만 응답에 사용합니다.
-- **Fail closed** — 인증·외부 API·토큰·데이터 신선도 조건이 불완전하면 성공으로 처리하지 않습니다.
-- **Evidence over claims** — 테스트, CI, PR, ADR, 실행 기록으로 구현 범위와 미검증 범위를 함께 남깁니다.
+| Project | 직접 다룬 부분 | Stack / 현재 범위 |
+|---|---|---|
+| **IfSave** 🔒 · [Case Study](https://app.notion.com/p/3b78a4915b16814c8ed3fcb9389ae8a4) | 소비를 25개 사전 정의 자산과 비교하는 Backend·Data·AI 흐름을 구현했습니다. 소비 저장 시 가상 매수 수량을 먼저 고정하고 이후 가격으로 기회비용을 계산합니다. 수동/CSV/OCR 입력과 AI 페르소나 6종을 연결하되, 금액·수치 계산은 LLM 밖에서 처리합니다. | Java 21 · Spring Boot 3 · PostgreSQL 16 · 비공개 저장소 |
+| **[Distributed Shared Editor](https://github.com/jhsoo0211/distributed-systems-team7)** | Ricart–Agrawala 분산 상호배제, Lamport clock 순서화, REQUEST/REPLY/HELD/RELEASE 처리, WebSocket 동기화, late-comer 세션 동기화를 구현했습니다. | Java 17 · Spring Boot · JPA · H2 · STOMP/SockJS · [Demo](https://www.youtube.com/watch?v=CVRLt1_CdIM) |
+| **[MarkLens](https://github.com/davinida/marklens/tree/develop)** | KIPRIS 수집·정제, 이미지 추출, OpenCLIP 512차원 임베딩, FAISS Top-K 검색, FastAPI 서빙 흐름을 다뤘습니다. 현재 develop 기준 1,000건 연구 표본을 사용하며 결과는 시각 유사도 한 축으로 한정합니다. | Python 3.11 · FastAPI · OpenCLIP · FAISS · PostgreSQL |
+| **[ReGrip](https://github.com/jhsoo0211/ReGrip)** | Canvas 재활 게임 4종을 교체형 `DataService`(`localStorage` ↔ REST), 세션·XP 기록, 오프라인 우선 저장 흐름과 연결했습니다. | FastAPI · SQLAlchemy · Vanilla JS · Canvas 2D · 소프트웨어/시뮬레이션 검증 단계 |
 
-### 🧩 Featured Backend & Data Projects
+## Collaboration Evidence
 
-백엔드·데이터 작업의 비중과 검증 근거를 기준으로 정리했습니다.
+### [KUIT Android Portfolio](https://github.com/jhsoo0211/KUIT_Refactory)
 
-| Priority | Project | Backend/Data work | Evidence & boundary |
-|---|---|---|---|
-| **1** | **IfSave** 🔒 | 25개 자산의 시점별 기회비용 계산, 소비 입력 3경로, 안전 경계를 둔 AI 해석, 캐시·DB 마이그레이션 | 2인 팀에서 Backend·Data·AI·Infra·기획 담당 · AI 페르소나 6종 · 고정 데모 거래 127건 · Java 21 / Spring Boot 3 / PostgreSQL 16 |
-| **2** | **Distributed Shared Editor** 🔒 | Spring Boot 노드 간 Ricart–Agrawala 상호배제, Lamport clock, REQUEST/REPLY/HELD/RELEASE, late-comer SYNC | 2인 팀 · Java 17 / Spring Boot / JPA / H2 / STOMP / SockJS · [Demo](https://www.youtube.com/watch?v=CVRLt1_CdIM) · 운영 환경·최신 테스트 정합성은 미재검증 |
-| **3** | **[ReGrip](https://github.com/jhsoo0211/ReGrip)** | 서버 권위 세션·XP 원장, JWT/회전 refresh token, localStorage↔REST 전환, 멱등 아웃박스 | Canvas 게임 4종 · FastAPI API · pytest/httpx 기반 API 테스트 · ESP32는 연동 트랙이며 실기기·임상 성능은 미검증 |
-| **4** | **[MarkLens](https://github.com/davinida/marklens)** | KIPRIS 수집·정제, PDF 이미지 추출, OpenCLIP 임베딩, FAISS Top-K, FastAPI 검색 API | 연구 샘플 1,000건 · 512D 임베딩 · Python 337 passed/5 skipped · Vitest 34/34 · E2E 9/9 · 법률 판단 서비스가 아님 |
-| **5** | **DearBloom** 🔒 | 독성·예산·제외 조건 hard filter → 가중치 → 다양성 선택 → LLM fallback의 결정적 추천 파이프라인 | 꽃 59종 · 이야기 438편 · 탄생화 366일 · 테스트 761개 · 편지는 localStorage, Supabase·실 LLM·공개 배포는 미검증 |
+`2025.03–2025.08` · Android 팀 프로젝트
 
-🔒 비공개 저장소의 구현 근거와 화면은 [Portfolio](https://app.notion.com/p/3c38a4915b1681819072c9ac96dbc358)에 정리했습니다.  
-[IfSave Case Study](https://app.notion.com/p/3b78a4915b16814c8ed3fcb9389ae8a4) · [DearBloom Case Study](https://app.notion.com/p/3be8a4915b16810aa30dc9922e519754)
+- 원본 팀 저장소에 제 GitHub 계정으로 **16개 PR이 병합**됐습니다.
+- My Routine, Routine Feed, 검색, 프로필·팔로우, Navigation, 서버 API 연결, FCM 알림을 주로 맡았습니다.
+- 2026년 개인 포트폴리오 사본에서는 네트워크 경계, 실패 상태 보존, 테스트, CI, 문서를 별도로 보강했습니다.
 
-### 🌐 Engineering Evidence
+[Contribution log](https://github.com/jhsoo0211/KUIT_Refactory/blob/main/docs/CONTRIBUTIONS.md)
 
-#### [KUIT Android Portfolio](https://github.com/jhsoo0211/KUIT_Refactory)
-
-`2025.03–2025.08` · 11인 팀 · Android 주요 기여자 1/4
-
-- 루틴·피드·검색·프로필·팔로우·알림/FCM을 중심으로 [16개 PR 병합](https://github.com/jhsoo0211/KUIT_Refactory/blob/main/docs/CONTRIBUTIONS.md)
-- Debug/Release 각각 JVM 테스트 32개 통과, lint error 0, main CI
-- TLS, 토큰·세션, 민감 로그, 실패 시 기존 데이터 보존 경계 보강
-
-모바일 프로젝트이지만 **협업 이력, 인증·네트워크 경계, 테스트와 CI**를 공개 저장소에서 직접 검증할 수 있어 별도 섹션에 뒀습니다.
-
-### 🛠 Stack by Backend Relevance
+## Stack
 
 - **Backend** — Java, Spring Boot, JPA, REST API, Python, FastAPI
 - **Data** — PostgreSQL, SQLite, Flyway, FAISS, OpenCLIP
-- **Reliability** — JUnit, Pytest, Vitest, Playwright, GitHub Actions, lint/typecheck
+- **Reliability** — JUnit, pytest, Vitest, Playwright, GitHub Actions, lint/typecheck
 - **Client integration** — TypeScript, Next.js, React, Kotlin, Jetpack Compose
 
-### 📚 Additional Work
+## Other Work
 
 - **[cv-panorama-stitching](https://github.com/jhsoo0211/cv-panorama-stitching)** — 1,000만 픽셀 메모리 예산을 둔 OpenCV 파노라마 스티칭 파이프라인과 회귀 테스트
-- **[MyCo-Kit](https://github.com/jhsoo0211/Myco-Kit)** — 버섯 폐배지 기반 자원순환 STEAM 키트의 React/TypeScript 랜딩 페이지 · [Live](https://ornate-beignet-ae6be6.netlify.app/)
+- **[MyCo-Kit](https://github.com/jhsoo0211/Myco-Kit)** — 균사체 기반 자원순환 STEAM 키트의 React/TypeScript 랜딩 페이지 · [Live](https://ornate-beignet-ae6be6.netlify.app/)
 - **[Business Planner Skills](https://github.com/jhsoo0211/bussiness-planner-skills)** — PSST 프레임워크 기반 사업계획서 작성 도구
 
-### 🎓 Education & Activities
+## Education & Activities
 
 - `2020.03–현재` 건국대학교 컴퓨터공학부
-- `2026` IfSave 드림학기제 선정 · ReGrip 경기청년 갭이어 선정 · MyCo-Kit U300 성장트랙 참여
+- `2026` IfSave 드림학기제 · ReGrip 경기청년 갭이어 · MyCo-Kit U300 성장트랙
 
-> 공개 수치는 저장소 테스트·실행 기록 또는 프로젝트 문서로 확인 가능한 범위만 적었습니다. 검증되지 않은 운영 배포·사용자·임상·매출 성과는 구분합니다.
+> 프로젝트 상태와 검증 범위는 각 저장소와 프로젝트 문서를 기준으로 적었습니다. 아직 검증하지 않은 운영·임상·법률 성능은 구현 완료 기능과 구분합니다.
