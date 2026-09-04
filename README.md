@@ -15,13 +15,13 @@ Recent work includes:
 
 ![Java](https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white) ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-[Portfolio](https://app.notion.com/p/3c38a4915b1681819072c9ac96dbc358)
+[Portfolio · English](https://app.notion.com/p/3d18a4915b16814886e2d840e3c6e322) · [포트폴리오 · 한국어](https://app.notion.com/p/3c38a4915b1681819072c9ac96dbc358)
 
 ## Selected Projects
 
 | Project | What I worked on | Stack / current scope |
 |---|---|---|
-| **IfSave** 🔒 · [Case Study](https://app.notion.com/p/3b78a4915b16814c8ed3fcb9389ae8a4) | Built the backend/data/AI flow for comparing a purchase with 25 predefined assets. A purchase fixes hypothetical quantities first; later prices are used for opportunity-cost calculations. Manual/CSV/OCR inputs and six AI personas are connected while numeric calculation stays outside the LLM path. | Java 21 · Spring Boot 3 · PostgreSQL 16 · private repository |
+| **IfSave** 🔒 · [Case Study](https://app.notion.com/p/3b78a4915b16814c8ed3fcb9389ae8a4) | Built the backend/data/AI flow for comparing a purchase with 60 predefined assets (30 Korean and 30 US). A purchase fixes hypothetical quantities first; later prices are used for opportunity-cost calculations. Manual/CSV/OCR inputs and six AI personas are connected while numeric calculation stays outside the LLM path. | Java 21 · Spring Boot 3 · PostgreSQL 16 · private repository |
 | **[Distributed Shared Editor](https://github.com/jhsoo0211/distributed-systems-team7)** | Implemented Ricart–Agrawala distributed mutual exclusion, Lamport-clock ordering, REQUEST/REPLY/HELD/RELEASE handling, WebSocket synchronization, and late-comer session sync. | Java 17 · Spring Boot · JPA · H2 · STOMP/SockJS · [Demo](https://www.youtube.com/watch?v=CVRLt1_CdIM) |
 | **[MarkLens](https://github.com/davinida/marklens/tree/develop)** | Worked on the trademark-search data path: KIPRIS collection/cleanup, image extraction, OpenCLIP 512D embeddings, FAISS Top-K retrieval, and FastAPI serving. The current develop track uses a limited 1,000-trademark research sample and reports visual similarity only. | Python 3.11 · FastAPI · OpenCLIP · FAISS · PostgreSQL |
 | **[ReGrip](https://github.com/jhsoo0211/ReGrip)** | Connected four Canvas rehabilitation games to a replaceable `DataService` layer (`localStorage` ↔ REST), session/XP records, and offline-first persistence. | FastAPI · SQLAlchemy · Vanilla JS · Canvas 2D · software/simulation validation |
@@ -49,7 +49,7 @@ Recent work includes:
 
 - **[cv-panorama-stitching](https://github.com/jhsoo0211/cv-panorama-stitching)** — OpenCV panorama-stitching pipeline built around a 10-million-pixel memory budget and regression tests.
 - **[MyCo-Kit](https://github.com/jhsoo0211/Myco-Kit)** — React/TypeScript landing page for a circular-economy STEAM mycelium kit. [Live](https://ornate-beignet-ae6be6.netlify.app/)
-- **[Business Planner Skills](https://github.com/jhsoo0211/bussiness-planner-skills)** — tooling for drafting business plans around the Korean PSST framework.
+- **[Business Planner Skills](https://github.com/jhsoo0211/bussiness-planner-skills)** — 15 reusable skills for Korean startup-support business plans using PSST (Problem, Solution, Scale-up, Team), with Claude Code and Codex installation guidance. [English guide](https://github.com/jhsoo0211/bussiness-planner-skills/blob/main/README.en.md)
 
 ## Education & Activities
 
