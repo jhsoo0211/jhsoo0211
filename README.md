@@ -4,7 +4,7 @@
 
 Computer Science & Engineering at Konkuk University · Seoul, Korea
 
-I build backend services and data pipelines where calculations, external data, and AI-generated explanations need clear boundaries.
+Student developer building backend systems and exploring AI integrations. Always eager to learn, build, and keep my architecture clean.
 
 Recent work includes:
 - a financial backend that fixes a hypothetical position at purchase time and calculates its later opportunity cost,
